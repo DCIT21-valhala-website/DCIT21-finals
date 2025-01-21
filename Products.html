@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Valhalla Streets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: 'Bigilla';
+            src: url('/fonts/bigilla/Bigilla-Bold.otf');
+        }
+
+        @font-face {
+            font-family: 'Black Theory';
+            src: url('/fonts/black_theory/Black-Theory.otf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 99vw;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        section nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        section nav .logo img {
+            width: 150px;
+            cursor: pointer;
+            margin: 7px 0;
+        }
+
+        section nav ul {
+            list-style: none;
+        }
+
+        section nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        section nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            font-size: 20px;
+            transition: 0.1s;
+        }
+        section nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            background: black;
+            display: block;
+            transition: 0.2s linear;
+}
+
+        section nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section nav .icon i {
+            font-size: 18px;
+            color: #000;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        section nav .icon i:hover {
+            color: black;
+        }
+
+        section .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            top: 130px;
+        }
+
+        section .main .men_text h1 {
+            width: 40rem;
+            font-size: 100px;
+            position: relative;
+            top: -70px;
+            text-align: center;
+        }
+
+        section .main .men_text h1 span {
+            margin-left: 15px;
+            color: black;
+            font-family: 'Black Theory';
+            line-height: 35px;
+            font-size: 120px;
+            text-align: left;
+        }
+
+        section .main .main_image img {
+            width: 500px;
+            left: 70px;
+        }
+
+        section p {
+            width: 650px;
+            text-align: justify;
+            position: relative;
+            left: 100px;
+            bottom: 430px;
+            line-height: 22px;
+            font-size: 18px;
+            color: #333;
+            margin-top: 100px;
+        }
+
+        section .main_btn {
+            background: #fac031;
+            position: relative;
+            right: 123px;
+            bottom: 30px;
+            width: 150px;
+            cursor: pointer;
+            padding: 12px 25px;
+        }
+
+        section .main_btn a {
+            color: #fff;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        section .main_btn i {
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        section .main_btn:hover i {
+            transform: translateX(7px);
+        }
+
+        /* Menu */
+        .menu {
+            width: 100%;
+            padding: 70px 0;
+        }
+
+        .menu h1 {
+            font-size: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom:-50px;
+
+        }
+
+        .menu h1 span {
+            color: black;
+            margin-left: 15px;
+            font-family: 'MV Boli';
+            position:relative;
+            bottom: -30px;
+        }
+
+    
+
+        .menu .menu_box {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+            border-radius: 79px;
+            position:relative;
+            bottom: -50px;
+            left:25px;
+        }
+
+        .menu .menu_box .menu_card {
+            width: 320px;
+            height: 500px;
+            padding-top: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu .menu_box .menu_card .menu_image {
+            width: 300px;
+            height: 245px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .menu .menu_box .menu_card .menu_image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.3s;
+        }
+
+        .menu .menu_box .menu_card .menu_image:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu .menu_box .menu_card .small_card {
+            width: 45px;
+            height: 45px;
+            float: right;
+            position: relative;
+            top: -240px;
+            right: -8px;
+            opacity: 0;
+            border-radius: 7px;
+            transition: 0.3s;
+        }
+
+        .menu .menu_box .menu_card:hover .small_card {
+            position: relative;
+            top: 100px;
+            bottom:100px;
+            right: 20px;
+            opacity: 1;
+        }
+
+        .menu .menu_box .menu_card .small_card i {
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 50px;
+            color: #000;
+            cursor: pointer;
+            text-shadow: 0 0 6px #000;
+            transition: 0.2s;
+        }
+
+        .menu .menu_box .menu_card .small_card i:hover {
+            color: #fac031;
+        }
+
+        .menu .menu_box .menu_card .menu_info h4 {
+            width: 60%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            font-size: 20px;
+            color: #fac031;
+        }
+
+        .menu .menu_box .menu_card .menu_info p {
+            text-align: center;
+            margin-top: 8px;
+            line-height: 21px;
+        }
+
+        .menu .menu_box .menu_card .menu_info h3 {
+            text-align: center;
+            margin-top: 10px;
+            bottom: 10px;
+        }
+
+        .menu .menu_box .menu_card .menu_info .menu_icon {
+            color: #fac031;
+            text-align: center;
+            margin: 10px 0 10px 0;
+        }
+
+        .menu .menu_box .menu_card .menu_info .menu_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            background: #000;
+            padding: 8px 10px;
+            margin: 0 80px;
+            transition: 0.3s;
+        }
+        .header-links {
+    font-family: bigillia;
+}
+
+        footer {
+            width: 100%;
+            padding: 30px 0 0 20px;
+            background: #eeeeee;
+            
+        }
+
+        footer .footer_main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        footer .footer_main .footer_tag {
+            width: 100%;
+            text-align: center;
+            position:static;
+            bottom:0;
+        }
+
+        footer .footer_main .footer_tag h2 {
+            color: #000;
+            margin-bottom: 20px;
+            font-size: 30px;
+           
+        }
+
+        footer .footer_main .footer_tag p {
+            margin: 10px 0;
+        }
+
+        footer .footer_main .footer_tag i {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        footer .footer_main .footer_tag i:hover {
+            color: #fac031;
+        }
+        ::-webkit-scrollbar {
+            width: 13px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 15px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: green;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+   
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="Logo/logo na para sa streets.webp">
+            </div>
+
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+
+        </nav>
+     <!--Menu-->
+
+
+     <div class="menu" id="Menu">
+        <h1><span>New Arrivals</span></h1>
+
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <a href="Shoes1.html"><img src="Shoes/MShoe1.jpeg"></a>
+                   
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Converse Chuck 70 Trek</h4>
+                    <h3>₱4,290.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+           
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Shoes/NIKE SB DUNK LOW PRO.png">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Nike SB Dunk Low Pro</h4>
+                   
+                    <h3>₱6,895</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Shoes/Nike Zoom Vomero 5.jpeg">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Nike Zoom Vomero 5</h4>
+                   
+                    <h3>₱8,895</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Shoes/NIKE AIR MAX1'86 OGG.png">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Nike Air Max1 '86 OGG</h4>
+                   
+                    <h3>₱8,895</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Caps/NEW ERA 9TWENTY BASIC TRUCKER.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>NEW ERA 9TWENTY BASIC TRUCKER</h4>
+                   
+                    <h3>₱3,700</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Caps/NEW ERA 9TWENTY BASIC STRAPBACK.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>New Era 9Twenty Basic Strapback </h4>
+                   
+                    <h3>₱3,700</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Caps/TRUCKER BIG BASIC SNAPBACK.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Trucker Big Basic Snapback</h4>
+                   
+                    <h3>₱3,700</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Caps/BASIC STUSSY CAP WASHED.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Basic Stussy Cap Washed</h4>
+                   
+                    <h3>₱3,700</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Socks/CH FOTI SOCKS.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Chrome Hearts FOTI Socks</h4>
+                   
+                    <h3>₱17,150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Socks/CH LOGO SOCKS.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Chrome Hearts Logo Socks</h4>
+                   
+                    <h3>₱17,150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Socks/CH SPORT.webp">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Chrome Hearts Men Sports Socks</h4>
+                   
+                    <h3>₱17,150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+
+
+            <div class="menu_card">
+
+
+                <div class="menu_image">
+                    <img src="Socks/CH WOMEN SPORT.png">
+                </div>
+
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+
+                <div class="menu_info">
+                    <h4>Chrome Hearts Women Sport Socks</h4>  
+                    <h3>₱17,150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_main">
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Sri Lanka</p>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallery</p>
+                <p>Order</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568456</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
