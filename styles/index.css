@@ -17,8 +17,6 @@
 
 body {
     width: 99vw;
-   
-  
 }
 
 html{
@@ -45,7 +43,7 @@ section nav{
 }
 
 section nav .logo img{
-    width: 150px;
+    width: 100px;
     cursor: pointer;
     margin: 7px 0;
 }
@@ -71,7 +69,7 @@ section nav ul li a:hover::after{
     width: 100%;
 }
 section nav ul li a:hover{
-    color:#000;
+    color: rgb(0, 128, 0);
 }
 section nav ul li a{
     text-decoration: none;
@@ -84,7 +82,7 @@ section nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: black;
+    background: rgb(0, 128, 0);
     display: block;
     transition: 0.2s linear;
 }
@@ -116,7 +114,7 @@ section .main{
 
 section .main .men_text h1{
     width: 40rem;
-    font-size: 10px; /* LINE HEIGHT TO AHH!!! */
+    font-size: 60px; /* LINE HEIGHT TO AHH!!! */
     position: relative;
     top: -70px;
     text-align :center;
@@ -125,16 +123,16 @@ section .main .men_text h1{
 section .main .men_text h1 span{
     margin-left: 15px;
     color:black;
-    font-family:"Black\Theory";
+    font-family:"Black Theory";
     line-height: 35px;
-    font-size: 120px;
+    font-size: 80px;
     text-align : center;
     right:50px;
     left: 50px;
 }
 
 section .main .main_image img{
-    width: 500px;
+    width: 600px;
     left: 30px;
     position: relative;
 }
@@ -295,7 +293,7 @@ box-shadow:  35px 35px 70px #bebebe,
 
 /* Newly added rule (Don't touch) */
 .header-links {
-    font-family: bigillia;
+    font-family: "bigillia";
 }
 
 /*Footer*/
