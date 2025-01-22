@@ -1,366 +1,368 @@
 @font-face {
-    font-family:'bigillia';
-    src: url('/fonts/bigilla/Bigilla-Bold.otf');;
+  font-family: "Oswald";
+  src: url("/fonts/Oswald/static/Oswald-Bold.ttf");
 }
 
 @font-face {
-    font-family: 'black-theory';
-    src: url('/fonts/black_theory/Black-Theory.otf');
+  font-family: "black-theory";
+  src: url("/fonts/black_theory/Black-Theory.otf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@font-face {
+    font-family: "pricedown";
+    src: url("/fonts/pricedown/Pricedown\ Bl.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-    width: 99vw;
+  width: 99vw;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
+section {
+  width: 100%;
+  height: 100vh;
 }
 
-section nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    left: 0;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    z-index: 1000;
-
+section nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-section nav .logo img{
-    width: 100px;
-    cursor: pointer;
-    margin: 7px 0;
+section nav .logo img {
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
 }
 
-section nav ul{
-    list-style: none;
+section nav ul {
+  list-style: none;
 }
 
-section nav ul li{
-    display: inline-block;
-    margin: 0 15px;
+section nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-section nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-size: 20px;
-    transition: 0.1s;
+section nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-section nav ul li a:hover::after{
-    width: 100%;
+section nav ul li a:hover::after {
+  width: 100%;
 }
-section nav ul li a:hover{
-    color: rgb(0, 128, 0);
+section nav ul li a:hover {
+  color: rgb(0, 128, 0);
 }
-section nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-size: 17px;
-    transition: 0.1s;
+section nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
 }
-section nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 2px;
-    background: rgb(0, 128, 0);
-    display: block;
-    transition: 0.2s linear;
+section nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: rgb(0, 128, 0);
+  display: block;
 }
 
-section nav .icon i{
-    font-size: 18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.3s;
+section nav .icon i {
+  font-size: 18px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-section nav .icon i:hover{
-    font-size:18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.3s;
+section nav .icon i:hover {
+  font-size: 18px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-section .main{
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top: 100px;
+section .main {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
 }
 
-section .main .men_text h1{
-    width: 40rem;
-    font-size: 60px; /* LINE HEIGHT TO AHH!!! */
-    position: relative;
-    top: -70px;
-    text-align :center;
+section .main .men_text h1 {
+  width: 35rem;
+  font-size: 70px; /* LINE HEIGHT TO AHH!!! */
+  position: relative;
+  top: -20px;
+  text-align: center;
 }
 
-section .main .men_text h1 span{
-    margin-left: 15px;
-    color:black;
-    font-family:"Black Theory";
-    line-height: 35px;
-    font-size: 80px;
-    text-align : center;
-    right:50px;
-    left: 50px;
+section .main .men_text h1 span {
+  margin-left: 15px;
+  color: black;
+  font-family: "pricedown";
+  line-height: 35px;
+  font-size: 90px;
+  text-align: center;
+  right: 50px;
+  left: 50px;
 }
 
-section .main .main_image img{
-    width: 600px;
-    left: 30px;
-    position: relative;
+section .main .main_image img {
+  width: 700px;
+  left: 30px;
+  position: relative;
 }
-section p{
-    width: 650px;
-    text-align: justify;
-    position: relative;
-    left: 100px;
-    bottom: 430px;
-    line-height: 22px;
-    
-}
-
-section .main_btn{
-    background: green;
-    width: 159px;
-    cursor: pointer;
-    padding: 12px 25px;
-    position: absolute;
-    bottom: 50px;
-    left:130px;
-    font-size: 18px;
+section p {
+  width: 650px;
+  text-align: justify;
+  position: relative;
+  left: 100px;
+  bottom: 430px;
+  line-height: 22px;
 }
 
-section .main_btn a{
-    color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
+section .main_btn {
+  background: green;
+  width: 159px;
+  cursor: pointer;
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 130px;
+  font-size: 18px;
 }
 
-section .main_btn i{
-    color: #fff;
-    transition: 0.3s;
+section .main_btn a {
+  color: #fff;
+  margin-right: 5px;
+  text-decoration: none;
 }
 
-section .main_btn:hover i{
-    transform: translateX(7px);
+section .main_btn i {
+  color: #fff;
+  transition: 0.3s;
+}
+
+section .main_btn:hover i {
+  transform: translateX(7px);
 }
 
 /*Gallary*/
 
-.gallary{
-    width: 100%;
-    padding: 70px 0;
+.gallary {
+  width: 100%;
+  padding: 70px 0;
 }
 
-.gallary h1{
-    font-size: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+.gallary h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.gallary_image{
-    width: 400px;
-    height:auto;
-    display:flex;
-    flex-wrap: wrap;
-    align-items:left;
-    align-content: left;
-}
-
-
-.gallary h1 span{
-    margin-left: 15px;
-    color: black;
-    font-family: mv boli;
+.gallary_image {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  align-content: left;
 }
 
-.gallary h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    display: block;
-    position: relative;
-    bottom: 15px;
+.gallary h1 span {
+  margin-left: 15px;
+  color: black;
+  font-family: 'Oswald';
 }
 
-.gallary .gallary_image_box{
-    width: 95%;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    overflow:hidden;
+.gallary h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: relative;
+  bottom: 15px;
 }
 
-.gallary .gallary_image_box .gallary_image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    border-radius: 20px;
-background: #e0e0e0;
-box-shadow:  35px 35px 70px #bebebe,
-             -35px -35px 70px #ffffff;
+.gallary .gallary_image_box {
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  overflow: hidden;
 }
 
-.gallary .gallary_image_box .gallary_image img{
-    width: 100%;
-    transition: .3s;
-    object-fit: cover;
-    display:block;
+.gallary .gallary_image_box .gallary_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
 }
 
-.gallary .gallary_image_box .gallary_image:hover img{
-    opacity: 0.4;
+.gallary .gallary_image_box .gallary_image img {
+  width: 100%;
+  transition: 0.3s;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
 }
 
-.gallary .gallary_image_box .gallary_image h3{
-    position: absolute;
-    font-size: 35px;
-    margin-bottom: 130px;
-    color: #fac031;
-    font-family: polo;
-    z-index: 5;
-    opacity: 0;
-    transition: 0.3s;
+.gallary .gallary_image_box .gallary_image:hover img {
+  opacity: 0.4;
 }
 
-.gallary .gallary_image_box .gallary_image:hover h3{
-    opacity: 1;
+.gallary .gallary_image_box .gallary_image h3 {
+  position: absolute;
+  font-size: 35px;
+  margin-bottom: 130px;
+  color: #fac031;
+  font-family: polo;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.gallary .gallary_image_box .gallary_image p{
-    position: absolute;
-    width: 400px;
-    margin-top: 30px;
-    text-align: center;
-    color: white;
-    line-height: 22px;
-    opacity: 0;
-    z-index: 5;
-    transition: 0.3s;
+.gallary .gallary_image_box .gallary_image:hover h3 {
+  opacity: 1;
 }
 
-.gallary .gallary_image_box .gallary_image:hover p{
-    opacity: 1;
+.gallary .gallary_image_box .gallary_image p {
+  position: absolute;
+  width: 400px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  opacity: 0;
+  z-index: 5;
+  transition: 0.3s;
 }
 
-.gallary .gallary_image_box .gallary_image .gallary_btn{
-    position: absolute;
-    margin-top: 180px;
-    color: #000;
-    background: #fac031;
-    padding: 7px 25px;
-    text-decoration: none;
-    opacity: 0;
-    transform: translateY(45px);
-    z-index: 5;
-    transition: 0.3s;
+.gallary .gallary_image_box .gallary_image:hover p {
+  opacity: 1;
 }
 
-.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
-    opacity: 1;
-    transform: translateY(0);
+.gallary .gallary_image_box .gallary_image .gallary_btn {
+  position: absolute;
+  margin-top: 180px;
+  color: #000;
+  background: #fac031;
+  padding: 7px 25px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(45px);
+  z-index: 5;
+  transition: 0.3s;
 }
 
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Newly added rule (Don't touch) */
 .header-links {
-    font-family: "bigillia";
+  font-family: "Oswald";
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(0, 128, 0);
 }
 
 /*Footer*/
 
-footer{
-    width: 100%;
-    padding: 30px 0 0 20px;
-    background: #eeeeee;
+footer {
+  width: 100%;
+  padding: 30px 0 0 20px;
+  background: #eeeeee;
 }
 
-footer .footer_main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+footer .footer_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-footer .footer_main .footer_tag{
-    width: 90%;
-    text-align: center;
+footer .footer_main .footer_tag {
+  width: 90%;
+  text-align: center;
 }
 
 footer .footer_main .footer_tag h2 {
-    color: #000;
-    margin-bottom: 25px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-footer .footer_main .footer_tag h2 a::after{
-    color: #000;
-    margin-bottom: 25px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+footer .footer_main .footer_tag h2 a::after {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-footer .footer_main .footer_tag p{
-    margin: 10px 0;
+footer .footer_main .footer_tag p {
+  margin: 10px 0;
 }
 
-footer .footer_main .footer_tag i{
-    margin: 0 5px;
-    cursor: pointer;
+footer .footer_main .footer_tag i {
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-footer .footer_main .footer_tag i:hover{
-    color: #fac031;
+footer .footer_main .footer_tag i:hover {
+  color: #fac031;
 }
-footer .footer_main .footer_tag  h2 a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-size: 20px;
-    transition: 0.1s;
-
-}
-
-::-webkit-scrollbar{
-    width: 13px;
+footer .footer_main .footer_tag h2 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.1s;
 }
 
-::-webkit-scrollbar-track{
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+::-webkit-scrollbar {
+  width: 13px;
 }
 
-::-webkit-scrollbar-thumb{
-    background: green ;
-    border-radius: 15px;
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 15px;
 }
