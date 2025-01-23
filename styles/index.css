@@ -52,39 +52,64 @@ section nav .logo img {
   margin: 7px 0;
 }
 
-section nav ul {
-  list-style: none;
+section nav .dropdown {
+  height: 60px;
+  display: flex;
 }
 
-section nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+section nav .dropdown .dropdown-content {
+  width: 100%;
+  height: 0;
+  display: block;
+  position: absolute;
+  background: white;
+  top: 70px;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 300ms ease;
 }
 
-section nav ul li a {
+section nav .dropdown .dropdown-content-hover {
+  height: 20rem;
+  transform: translateY(0);
+}
+
+section nav .dropdown .links {
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+section nav .dropdown .links summary {
+  width: 1rem;
+  height: 100%;
+}
+
+section nav .dropdown .links a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
   font-size: 20px;
 }
 
-section nav ul li a:hover::after {
+section nav .dropdown .links a:hover::after {
   width: 100%;
 }
-section nav ul li a:hover {
-  color: rgb(0, 128, 0);
-}
-section nav ul li a {
+
+section nav .dropdown .links a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
   font-size: 17px;
 }
-section nav ul li a::after {
+
+section nav .dropdown .links a::after {
   content: "";
   width: 0;
   height: 2px;
-  background: rgb(0, 128, 0);
+  background: #000;
   display: block;
 }
 
@@ -295,8 +320,10 @@ section .main_btn:hover i {
   cursor: pointer;
 }
 
-.active {
-  color: rgb(0, 128, 0);
+/*interaction*/
+
+.not-active {
+  color: #acacac;
 }
 
 /*Footer*/
