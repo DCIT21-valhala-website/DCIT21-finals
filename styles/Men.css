@@ -300,33 +300,42 @@
   
   
 
-
   footer {
     width: 100%;
-    padding: 10px 0;
+    padding: 30px 0;
     background: #eeeeee;
-    position:absolute;
+    position: absolute; /* Change to relative to avoid overflow issues */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center ;
-    margin-top:40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+footer .footer_main {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
 }
 
-footer .footer_main {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0 20px;
+footer img {
+  width: 250px; /* Original width */
+  height: 300px; /* Original height */
+  margin: 10px 20px 7px 0; /* Add margin to the right */
+  display: block;
+  transform: scale(2.2); /* Scale the image to make it bigger */
 }
 
 footer .footer_main .footer_tag {
     width: 20%;
     text-align: center;
     margin-bottom: 20px;
+    position: relative; /* Adjust positioning */
+    top: 10px; /* Adjust the vertical position */
+    left: 0; /* Adjust the horizontal position */
 }
 
 footer .footer_main .footer_tag h2 {
@@ -335,6 +344,7 @@ footer .footer_main .footer_tag h2 {
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
+    text-align: center; /* Center the text */
 }
 
 footer .footer_main .footer_tag h2 a {
@@ -371,4 +381,3 @@ footer .footer_main .footer_tag i:hover {
     background: green;
     border-radius: 15px;
 }
-
