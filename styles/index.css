@@ -241,9 +241,10 @@ section .main_btn:hover i {
   align-items: center;
   justify-content: center;
   background: black;
-  border-radius: 20px;
-  background: #e0e0e0;
-  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+  border-radius: 40px;
+background: #cdc1c1;
+box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
+            inset 50px 50px 100px #cfc3c3;
 }
 
 .gallary .gallary_image_box .gallary_image img {
