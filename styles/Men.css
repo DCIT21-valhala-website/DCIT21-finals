@@ -293,14 +293,14 @@ section .main_btn:hover i {
     align-items: center;
     justify-content: center;
     line-height: 50px;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
-    text-shadow: 0 0 6px #000;
+    text-shadow: 0 0 6px #ffffff;
     transition: 0.2s;
   }
   
   .menu .menu_box .menu_card .small_card i:hover {
-    color: #fac031;
+    color: red;
   }
   
   .menu .menu_box .menu_card .menu_info h4 {

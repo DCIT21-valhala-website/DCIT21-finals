@@ -234,7 +234,7 @@ section .main_btn:hover i {
   padding-top: 10px;
   margin-bottom: 20px;
   border-radius: 40px;
-  background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%); 
+  background: linear-gradient(135deg, #032924 0%, #151b0a 100%); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
               inset 0 10px 20px rgba(255, 255, 255, 0.1); 
 }
@@ -286,14 +286,14 @@ section .main_btn:hover i {
   align-items: center;
   justify-content: center;
   line-height: 50px;
-  color: #000;
+  color: #ffffff;
   cursor: pointer;
-  text-shadow: 0 0 6px #000;
+  text-shadow: 0 0 6px #ffffff;
   transition: 0.2s;
 }
 
 .menu .menu_box .menu_card .small_card i:hover {
-  color: #fac031;
+  color: red;
 }
 
 .menu .menu_box .menu_card .menu_info h4 {
