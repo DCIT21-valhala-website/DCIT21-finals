@@ -39,7 +39,7 @@ button:hover {
 }
 .emojis {
   display: inline-block;
-  animation: 5s sliding infinite linear;
+  animation: 40s sliding infinite linear;
 }
 
 
