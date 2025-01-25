@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/static/Oswald-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "black-theory";
+    src: url("/fonts/black_theory/Black-Theory.otf");
+  }
+  
+  @font-face {
+      font-family: "pricedown";
+      src: url("/fonts/pricedown/Pricedown\ Bl.otf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 99vw;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  section nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+  }
+  
+  section nav .dropdown {
+    height: 60px;
+    display: flex;
+  }
+  
+  section nav .dropdown .dropdown-content {
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: white;
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  section nav .dropdown .links {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  section nav .dropdown .links summary {
+    width: 1rem;
+    height: 100%;
+  }
+  
+  section nav .dropdown .links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  section nav .dropdown .links a:hover::after {
+    width: 100%;
+  }
+  
+  section nav .dropdown .links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  section nav .dropdown .links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #000;
+    display: block;
+  }
+  
+  section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  section nav .icon i:hover {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  section .main {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+  }
+  
+  section .main .men_text h1 {
+    width: 35rem;
+    font-size: 70px; /* LINE HEIGHT TO AHH!!! */
+    position: relative;
+    top: -20px;
+    text-align: center;
+  }
+  
+  section .main .men_text h1 span {
+    margin-left: 15px;
+    color: black;
+    font-family: "pricedown";
+    line-height: 35px;
+    font-size: 90px;
+    text-align: center;
+    right: 50px;
+    left: 50px;
+  }
+  
+  section .main .main_image img {
+    width: 700px;
+    left: 30px;
+    position: relative;
+  }
+  section p {
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    bottom: 430px;
+    line-height: 22px;
+  }
+
+  
+  .header-links {
+    font-family: "Oswald";
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 15px;
+  }
