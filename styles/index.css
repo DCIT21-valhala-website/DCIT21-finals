@@ -231,6 +231,8 @@ section .main_btn a {
   color: #fff;
   margin-right: 5px;
   text-decoration: none;
+  font-family:"Oswald";
+  text-align: right;
 }
 
 section .main_btn i {
@@ -281,9 +283,11 @@ section .main_btn:hover i {
 
 .about .about_main .about_text p{
   width: 650px;
+  font-size: 20px;
   text-align: justify;
   margin-left: -100px;
   line-height: 22px;
+  font-family: "Bigillia";
 }
 
 .about .about_btn{
@@ -369,12 +373,15 @@ box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
   font-size: 35px;
   margin-bottom: 130px;
   color: #fac031;
-  font-family: polo;
+  font-family:"Oswald";
   z-index: 5;
   opacity: 0;
   transition: 0.3s;
 }
-
+.gallary_btn {
+  font-family: "Oswald";
+  
+}
 .gallary .gallary_image_box .gallary_image:hover h3 {
   opacity: 1;
 }
@@ -394,12 +401,12 @@ box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
 .gallary .gallary_image_box .gallary_image:hover p {
   opacity: 1;
 }
-
+ 
 .gallary .gallary_image_box .gallary_image .gallary_btn {
   position: absolute;
   margin-top: 180px;
-  color: #000;
-  background: #fac031;
+  color: white;
+  background: green;
   padding: 7px 25px;
   text-decoration: none;
   opacity: 0;
