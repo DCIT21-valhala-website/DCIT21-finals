@@ -37,12 +37,25 @@ button:hover {
   transform: scale(1.0);
   transition: 0.5s ease;
 }
-.emojis {
+.Home-screen {
   display: inline-block;
   animation: 40s sliding infinite linear;
 }
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
 
 @keyframes sliding {
   from {
@@ -400,7 +413,6 @@ box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
   transform: translateY(0);
 }
 
-/* Newly added rule (Don't touch) */
 .header-links {
   font-family: "Oswald";
   cursor: pointer;
@@ -412,7 +424,6 @@ box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
   color: #acacac;
 }
 
-/*Footer*/
 
 footer {
   width: 100%;
