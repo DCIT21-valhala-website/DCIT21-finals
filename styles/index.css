@@ -187,7 +187,7 @@ section .main .men_text h1 {
   width: 35rem;
   font-size: 70px; /* LINE HEIGHT TO AHH!!! */
   position: relative;
-  top: -20px;
+  top: -50px;
   text-align: center;
 }
 
@@ -200,6 +200,7 @@ section .main .men_text h1 span {
   text-align: center;
   right: 50px;
   left: 50px;
+  top:-500px;
 }
 
 section .main .main_image img {
@@ -222,7 +223,7 @@ section .main_btn {
   cursor: pointer;
   padding: 12px 25px;
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   left: 130px;
   font-size: 18px;
 }
