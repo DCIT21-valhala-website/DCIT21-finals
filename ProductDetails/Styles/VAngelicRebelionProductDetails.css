@@ -200,6 +200,8 @@ section p {
   box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
   5px 5px 35px 5px rgba(0, 0, 0, 0);
   border-radius: 60px;
+  position:relative;
+  bottom:-30px;
 }
 .product-details {
   display: flex;
@@ -218,7 +220,7 @@ border-radius:100px;
   border-radius: 60px;
   position:relative;
  left:30px;
- top:20px;
+ top:10px;
 }
 
 .product-info {
@@ -253,7 +255,7 @@ display: flex;
 justify-content: space-between; /* Adjust spacing between buttons */
 gap: 10px; /* Add gap between buttons if needed */
 position: relative; /* Use relative or absolute positioning */
-top: -50px; 
+top: -20px; 
 }
 .checkout a button{
 font-family: "Oswald";
@@ -330,14 +332,21 @@ background-color: #33ff5f;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  line-height: 25px;
+  color:white;
+  position:relative;
+  bottom:30px;
+  font-family: "Oswald";
 }
 
 .additional-info div {
   display: flex;
   gap: 10px;
-  font-size: 16px;
+  font-size: 25px;
+  font-family: "Oswald";
 }
 
 .additional-info div span:first-child {
   font-weight: bold;
+  font-family: "Oswald";
 }
