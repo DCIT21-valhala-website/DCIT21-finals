@@ -1,1 +1,0 @@
-var bgMusic = new Audio('/music/bg-music.mp3');
