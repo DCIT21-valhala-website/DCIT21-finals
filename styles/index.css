@@ -489,7 +489,6 @@ footer .footer_tag {
   flex: 1;
   text-align: center;
   margin-bottom: 20px;
-  text-decoration: none;
 }
 
 footer .footer_tag h2 {
@@ -499,7 +498,9 @@ footer .footer_tag h2 {
   cursor: pointer;
   transition: 0.3s;
 }
-
+.footer_tag a{
+  text-decoration: none;
+}
 
 footer .footer_main .footer_tag h2 a {
   text-decoration: none;
