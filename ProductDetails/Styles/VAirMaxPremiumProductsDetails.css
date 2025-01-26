@@ -191,7 +191,7 @@
     background-color: #000000;
     box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
     5px 5px 35px 5px rgba(0, 0, 0, 0);
-    border-radius: 60px;
+    
 }
 .product-details {
     display: flex;
@@ -208,6 +208,9 @@
 .product-image img {
     width: 100%;
     border-radius: 60px;
+    position:relative;
+   left:30px;
+   top:20px;
 }
 
 .product-info {
@@ -226,7 +229,7 @@
 
 .product-price {
     font-size: 20px;
-    color: #e63946;
+    color: gold;
     font-weight: bold;
 }
 
@@ -234,7 +237,7 @@
     font-size: 20px;
     line-height: 1.6;
     color: white;
-    font-family: "Bigilia";
+    font-family: "pricedown";
 }
 
 .button-container {
@@ -244,7 +247,14 @@
   position: relative; /* Use relative or absolute positioning */
   top: -30px; 
 }
-
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+}
+.add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+}
 .add-to-cart  {
   flex: 1; /* Ensure buttons take equal space */
 }
