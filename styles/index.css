@@ -12,8 +12,16 @@
     font-family: "pricedown";
     src: url("/fonts/pricedown/Pricedown\ Bl.otf");
 }
+@font-face {
+  font-family: "YanoneKaffeesatz";
+  src: url("/fonts/YanoneKaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf");
+}
+@font-face {
+font-family: "Teko";
+src: url("/fonts/Teko/Teko-VariableFont_wght.ttf");
+}
 .card {
-  width: 650px;
+  width: 550px;
   height: 520px;
   background: rgba(41, 41, 41, 0.07);
   white-space: nowrap;
@@ -24,8 +32,8 @@
   box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
     5px 5px 35px 5px rgba(0, 0, 0, 0);
    position:relative;
-  right:500px;
-  bottom:80px;
+ left:-10px;
+  bottom:100px;
 }
 
 button {
@@ -200,27 +208,26 @@ section .main .men_text h1 span {
 
   color: black;
   font-family: "Black\ Theory";
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
+position:relative;
+bottom:100px;
+}
+
+
+.sub_main .sub_text {
+  width: 500px;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+  font-family:"Oswald";
+  position:relative;
+ left:-600px;
+  top:300px;
 
 }
-section .main .sub_text h2 {
-  width: 35rem;
-  font-size:25px; /* LINE HEIGHT TO AHH!!! */
-  position: relative;
-  top: 130px;
-  text-align: justify;
-  left: -550px;
-}
-section .main .sub_text h2 span {
-
-  color: black;
-  font-family: "Oswald";
-  line-height: 0px;
-  font-size: 25px;
-  text-align: justify;
-  
- 
+.sub_text h2 {
+  font-family:"Oswald";
 }
 
 section .main .main_image img {
@@ -243,8 +250,8 @@ section .main_btn {
   cursor: pointer;
   padding: 12px 25px;
   position: absolute;
-  bottom: 10px;
-  left: -500px;
+  top: 170px;
+  left: -10px;
   font-size: 18px;
 }
 
@@ -304,11 +311,11 @@ section .main_btn:hover i {
 
 .about .about_main .about_text p{
   width: 650px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: justify;
   margin-left: -100px;
   line-height: 22px;
-  font-family: "Bigillia";
+  font-family: "Teko";
 }
 
 .about .about_btn{
@@ -467,7 +474,8 @@ footer {
 
 footer .footer_main {
   flex: 1;
-  display: inline-flex;
+  display:flex;
+  position: relative;
   justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
@@ -507,6 +515,10 @@ footer .footer_main .footer_tag h2 a {
   color: #000;
   font-weight: 500;
 }
+.footer_tag h2{
+  position:relative;
+  top:15px;
+}
 
 footer .footer_main .footer_tag p {
   margin: 10px 0;
@@ -517,11 +529,19 @@ footer .footer_main .footer_tag i {
   margin: 0 5px;
   cursor: pointer;
   transition: 0.3s;
+  color:black;
 }
 
 footer .footer_main .footer_tag i:hover {
-  color: #fac031;
+  color: green;
 }
+.footer_icon{
+  font-size:20px;
+  align-items:center;
+  position: relative;
+  left:0px;
+}
+
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
