@@ -12,6 +12,14 @@
       font-family: "pricedown";
       src: url("/fonts/pricedown/Pricedown\ Bl.otf");
   }
+  @font-face {
+    font-family: "YanoneKaffeesatz";
+    src: url("/fonts/YanoneKaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Teko";
+  src: url("/fonts/Teko/Teko-VariableFont_wght.ttf");
+}
   
   * {
     margin: 0;
@@ -234,10 +242,10 @@
 }
 
 .product-description {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.6;
     color: white;
-    font-family: "Yanone_Kaffeesatz";
+    font-family: "Teko";
 }
 
 .button-container {
