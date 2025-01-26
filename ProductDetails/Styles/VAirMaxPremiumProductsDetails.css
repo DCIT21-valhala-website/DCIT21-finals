@@ -199,7 +199,7 @@
     background-color: #000000;
     box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
     5px 5px 35px 5px rgba(0, 0, 0, 0);
-    
+    border-radius: 60px;
 }
 .product-details {
     display: flex;
@@ -253,7 +253,7 @@
   justify-content: space-between; /* Adjust spacing between buttons */
   gap: 10px; /* Add gap between buttons if needed */
   position: relative; /* Use relative or absolute positioning */
-  top: -30px; 
+  top: -50px; 
 }
 .checkout a button{
   font-family: "Oswald";
