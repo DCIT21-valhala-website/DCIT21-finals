@@ -371,10 +371,10 @@ section .main_btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: rgb(20, 16, 16);
   border-radius: 80px;
 box-shadow: inset -50px -50px 100px hwb(10% 10% 100%),
-            inset 50px 50px 100px #000000;
+            inset 50px 50px 100px #d8d2d2;
 }
 
 .gallary .gallary_image_box .gallary_image img {
@@ -387,7 +387,7 @@ box-shadow: inset -50px -50px 100px hwb(10% 10% 100%),
 
 .gallary .gallary_image_box .gallary_image:hover img {
   opacity: 0.10;
-  filter:blur(5px);
+  filter:blur(1px);
 }
 
 .gallary .gallary_image_box .gallary_image h3 {
@@ -489,6 +489,7 @@ footer .footer_tag {
   flex: 1;
   text-align: center;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 footer .footer_tag h2 {
