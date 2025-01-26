@@ -12,6 +12,14 @@
       font-family: "pricedown";
       src: url("/fonts/pricedown/Pricedown\ Bl.otf");
   }
+  @font-face {
+    font-family: "YanoneKaffeesatz";
+    src: url("/fonts/YanoneKaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Teko";
+  src: url("/fonts/Teko/Teko-VariableFont_wght.ttf");
+}
   
   * {
     margin: 0;
@@ -208,6 +216,9 @@
 .product-image img {
     width: 100%;
     border-radius: 60px;
+    position:relative;
+   left:30px;
+   top:20px;
 }
 
 .product-info {
@@ -226,15 +237,15 @@
 
 .product-price {
     font-size: 20px;
-    color: #e63946;
+    color: gold;
     font-weight: bold;
 }
 
 .product-description {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.6;
     color: white;
-    font-family: "Bigilia";
+    font-family: "Teko";
 }
 
 .button-container {
@@ -242,9 +253,16 @@
   justify-content: space-between; /* Adjust spacing between buttons */
   gap: 10px; /* Add gap between buttons if needed */
   position: relative; /* Use relative or absolute positioning */
-  top: -30px; 
+  top: -50px; 
 }
-
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+}
+.add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+}
 .add-to-cart  {
   flex: 1; /* Ensure buttons take equal space */
 }
