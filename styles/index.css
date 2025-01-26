@@ -373,8 +373,7 @@ section .main_btn:hover i {
   justify-content: center;
   background: black;
   border-radius: 80px;
-background: #cdc1c1;
-box-shadow: inset -50px -50px 100px hwb(0 0% 100%),
+box-shadow: inset -50px -50px 100px hwb(10% 10% 100%),
             inset 50px 50px 100px #000000;
 }
 
@@ -387,7 +386,7 @@ box-shadow: inset -50px -50px 100px hwb(0 0% 100%),
 }
 
 .gallary .gallary_image_box .gallary_image:hover img {
-  opacity: 0.8;
+  opacity: 0.10;
   filter:blur(5px);
 }
 
