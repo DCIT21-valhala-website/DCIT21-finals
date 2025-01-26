@@ -1,0 +1,585 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/static/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: "black-theory";
+    src: url("/fonts/black_theory/Black-Theory.otf");
+}
+
+@font-face {
+    font-family: "pricedown";
+    src: url("/fonts/pricedown/Pricedown\ Bl.otf");
+}
+
+button {
+    font-size: 70px;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: grab;
+}
+
+button:hover {
+    transform: scale(1.0);
+    transition: 0.5s ease;
+}
+
+.Home-screen {
+    display: inline-block;
+    animation: 40s sliding infinite linear;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes sliding {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-101%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 99vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav .dropdown {
+    height: 60px;
+    display: flex;
+}
+
+section nav .dropdown .dropdown-content {
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: white;
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+section nav .dropdown .links {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+section nav .dropdown .links summary {
+    width: 1rem;
+    height: 100%;
+}
+
+section nav .dropdown .links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+section nav .dropdown .links a:hover::after {
+    width: 100%;
+}
+
+section nav .dropdown .links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+section nav .dropdown .links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #000;
+    display: block;
+}
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+section nav .icon i:hover {
+    font-size: 18px;
+    color: #008000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: column;
+    top: 50px;
+}
+
+section .main .cart-text h1 {
+    font-size: 55px;
+    font-family: "Oswald";
+    color: black;
+    margin-right: 15px;
+}
+
+section .main .cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+section .main .cart-items table .header {
+    background: #90ff90;
+}
+
+section .main .cart-items table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section .main .cart-items table tr th {
+    font-size: 20px;
+    color: black;
+    padding: 10px 5px;
+    text-align: left;
+    font-family: "Oswald";
+}
+
+section .main .cart-items table tr td {
+    font-size: 13px;
+    color: black;
+    padding: 10px 5px;
+    text-align: left;
+    font-family: "Oswald";
+}
+
+section .main .cart-items table tr .item {
+    max-width: 30rem;
+    min-width: 25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+section .main .cart-items table tr .item img {
+    max-width: 200px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding-right: 15px;
+}
+
+section .main .cart-items table tr .item h3 {
+    margin: auto 0;
+}
+
+section .main .cart-items table tr .item h3 span {
+    color: gray;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+section .main .cart-items table tr .size {
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+section .main .cart-items table tr .color {
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+section .main .cart-items table tr .price {
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+section .main .cart-items table tr .quantity {
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+section .main .cart-items table tr .total {
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+section .main .main_image img {
+    width: 700px;
+    left: 30px;
+    position: relative;
+}
+
+section p {
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    bottom: 430px;
+    line-height: 22px;
+}
+
+section .main_btn {
+    background: green;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 10px;
+    left: -500px;
+    font-size: 18px;
+}
+
+section .main_btn a {
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+    font-family: "Oswald";
+    text-align: right;
+}
+
+section .main_btn i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i {
+    transform: translateX(7px);
+}
+
+.about {
+    width: 20%;
+    height: 40%;
+    padding: 10px 0;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img {
+    width: 700px;
+    position: relative;
+    top: 60px;
+    left: -100px;
+}
+
+.about .about_main .about_text h1 span {
+    color: black;
+    margin-right: 15px;
+    font-family: "Oswald";
+}
+
+.about .about_main .about_text h1 {
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+    margin-left: -100px;
+}
+
+.about .about_main .about_text h3 {
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about_main .about_text p {
+    width: 650px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: -100px;
+    line-height: 22px;
+    font-family: "Bigillia";
+}
+
+.about .about_btn {
+    background: #fac031;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+}
+
+
+.gallary {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary_image {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: left;
+}
+
+.gallary h1 span {
+    margin-left: 15px;
+    color: black;
+    font-family: "Black Theory";
+    font-size: 80px;
+}
+
+.gallary h1 span::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box {
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+.gallary .gallary_image_box .gallary_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 80px;
+    box-shadow: inset -50px -50px 100px hwb(10% 10% 100%),
+        inset 50px 50px 100px #000000;
+}
+
+.gallary .gallary_image_box .gallary_image img {
+    width: 100%;
+    transition: 0.3s;
+    object-fit: cover;
+    display: block;
+    border-radius: 80px;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img {
+    opacity: 0.10;
+    filter: blur(5px);
+}
+
+.gallary .gallary_image_box .gallary_image h3 {
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: white;
+    font-family: "Oswald";
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.gallary_btn {
+    font-family: "Oswald";
+
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3 {
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p {
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p {
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn {
+    position: absolute;
+    margin-top: 180px;
+    color: white;
+    background: green;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-links {
+    font-family: "Oswald";
+    cursor: pointer;
+}
+
+/*interaction*/
+
+.not-active {
+    color: #acacac;
+}
+
+
+footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #ffffff;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .footer_main {
+    flex: 1;
+    display: inline-flex;
+    justify-content: space-around;
+    /* Distribute space around items */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+footer .footer_img {
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+}
+
+footer .footer_img img {
+    width: 300px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+footer .footer_tag {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+footer .footer_main .footer_tag h2 a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+footer .footer_main .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: #fac031;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
