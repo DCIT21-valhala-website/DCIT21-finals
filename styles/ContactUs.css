@@ -303,7 +303,7 @@ section nav .icon i:hover {
     cursor: pointer;
     transition: 0.3s;
     font-size: 30px;
-     
+     color:black;
 }
 
 .team .team_box .profile .info .team_icon i:hover{

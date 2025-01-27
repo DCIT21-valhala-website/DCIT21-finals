@@ -343,6 +343,7 @@ section .main_btn:hover i {
     padding: 8px 10px;
     margin: 0 80px;
     transition: 0.3s;
+    font-family: "Oswald";
   }
 
   
@@ -375,7 +376,7 @@ footer .footer_main {
   justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
-  padding: 0 130px;
+  padding: 0 20px;
 }
 
 footer .footer_img {

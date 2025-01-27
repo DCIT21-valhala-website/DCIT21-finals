@@ -337,6 +337,7 @@ section .main_btn:hover i {
   padding: 8px 10px;
   margin: 0 80px;
   transition: 0.3s;
+  font-family: "Oswald";
 }
 /* Newly added rule (Don't touch) */
 .header-links {
