@@ -343,6 +343,7 @@ section .main_btn:hover i {
     padding: 8px 10px;
     margin: 0 80px;
     transition: 0.3s;
+    font-family: "Oswald";
   }
 
   
@@ -356,8 +357,8 @@ section .main_btn:hover i {
 .not-active {
   color: #acacac;
 }
-  
-  
+
+
 footer {
   width: 100%;
   padding: 30px 0;
@@ -414,15 +415,16 @@ footer .footer_main .footer_tag h2 a {
 .footer_tag h2{
   position:relative;
   top:15px;
+  
 }
 
 footer .footer_main .footer_tag p {
-  margin: 10px 0;
+  margin:  20px 0;
   text-align: center;
 }
 
 footer .footer_main .footer_tag i {
-  margin: 0 5px;
+  margin: 20 5px;
   cursor: pointer;
   transition: 0.3s;
   color:black;
@@ -432,24 +434,11 @@ footer .footer_main .footer_tag i:hover {
   color: green;
 }
 .footer_icon{
-  font-size:15px;
-  text-align:center;
+  font-size:20px;
+  align-items:center;
+  position: relative;
+  left:0px;
   
-}
-.footer_icon h2{
-  font-size:23px;
-  text-align:center;
-
-  
-}
-.footer_tag h2{
-  position:relative;
-  top:15px;
-}
-
-.footer_icon a{
-  margin:auto 5px  ;
- 
 }
 
 /* Scrollbar styles */
