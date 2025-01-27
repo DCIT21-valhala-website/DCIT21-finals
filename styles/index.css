@@ -252,6 +252,7 @@ section .main_btn {
   top: 170px;
   left: -10px;
   font-size: 18px;
+  border-radius: 25px;
 }
 
 section .main_btn a {
@@ -449,6 +450,7 @@ box-shadow: inset -50px -50px 100px hwb(10% 10% 100%),
   transform: translateY(45px);
   z-index: 5;
   transition: 0.3s;
+  border-radius: 25px;
 }
 
 .collab .collab_image_box .collab_image:hover .collab_btn {

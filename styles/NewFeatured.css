@@ -338,6 +338,7 @@ section .main_btn:hover i {
   margin: 0 80px;
   transition: 0.3s;
   font-family: "Oswald";
+  border-radius: 25px;
 }
 /* Newly added rule (Don't touch) */
 .header-links {
@@ -357,15 +358,14 @@ footer {
   display: inline;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  position: relative;
-  bottom:0;
+  
 }
 
 footer .footer_main {
   flex: 1;
-  display: flex;
-  justify-content: space-around;
+  display:flex;
+  position: relative;
+  justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
   padding: 0 20px;
@@ -373,7 +373,7 @@ footer .footer_main {
 
 footer .footer_img {
   flex: 1;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 
@@ -395,12 +395,19 @@ footer .footer_tag h2 {
   cursor: pointer;
   transition: 0.3s;
 }
-
+.footer_tag a{
+  text-decoration: none;
+}
 
 footer .footer_main .footer_tag h2 a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+.footer_tag h2{
+  position:relative;
+  top:15px;
+  
 }
 
 footer .footer_main .footer_tag p {
@@ -426,6 +433,33 @@ footer .footer_main .footer_tag i:hover {
   
 }
 
+ .footer_bottom {
+  width: 100%;
+  height: 100px;
+  padding: 1px 0;
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  
+}
+
+footer .footer_bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer_bottom p{
+  position: relative;
+  top:-62px;
+  left:400px;
+color:white;
+}
+.footer_bottom a{
+  text-decoration: none;
+  color:white;
+}
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 13px;
