@@ -375,7 +375,7 @@ footer .footer_main {
   justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 130px;
 }
 
 footer .footer_img {
@@ -418,12 +418,12 @@ footer .footer_main .footer_tag h2 a {
 }
 
 footer .footer_main .footer_tag p {
-  margin: 10px 0;
+  margin:  20px 0;
   text-align: center;
 }
 
 footer .footer_main .footer_tag i {
-  margin: 0 5px;
+  margin: 20 5px;
   cursor: pointer;
   transition: 0.3s;
   color:black;
