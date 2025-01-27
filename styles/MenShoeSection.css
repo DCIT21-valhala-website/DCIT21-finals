@@ -1,370 +1,365 @@
 @font-face {
-    font-family: "Oswald";
-    src: url("/fonts/Oswald/static/Oswald-Bold.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bigilla";
-    src: url("/fonts/bigilla/Bigilla-Bold.otf");
-  }
-  
-  @font-face {
-    font-family: "pricedown";
-    src: url("/fonts/pricedown/Pricedown\ Bl.otf");
+  font-family: "Oswald";
+  src: url("/fonts/Oswald/static/Oswald-Bold.ttf");
 }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    width: 99vw;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  
+
+@font-face {
+  font-family: "Bigilla";
+  src: url("/fonts/bigilla/Bigilla-Bold.otf");
+}
+
+@font-face {
+  font-family: "pricedown";
+  src: url("/fonts/pricedown/Pricedown\ Bl.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 99vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 section {
-  width: 100%;
-  height: 100vh;
+width: 100%;
+height: 100vh;
 }
 
 section nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  right: 0;
-  left: 0;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+right: 0;
+left: 0;
+background: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+z-index: 1000;
 }
 
 section nav .logo img {
-  width: 100px;
-  cursor: pointer;
-  margin: 7px 0;
+width: 100px;
+cursor: pointer;
+margin: 7px 0;
 }
 
 
 section nav .dropdown {
-  height: 60px;
-  display: flex;
+height: 60px;
+display: flex;
 }
 
 section nav .dropdown .dropdown-content {
-  width: 100%;
-  height: 0;
-  display: block;
-  position: absolute;
-  background: white;
-  top: 70px;
-  right: 0;
-  left: 0;
-  z-index: 1000;
-  transition: all 300ms ease;
+width: 100%;
+height: 0;
+display: block;
+position: absolute;
+background: white;
+top: 70px;
+right: 0;
+left: 0;
+z-index: 1000;
+transition: all 300ms ease;
 }
 
 section nav .dropdown .dropdown-content-hover {
-  height: 20rem;
-  transform: translateY(0);
+height: 20rem;
+transform: translateY(0);
 }
 
 section nav .dropdown .links {
-  height: 100%;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
+height: 100%;
+padding: 0 1rem;
+display: flex;
+align-items: center;
 }
 
 section nav .dropdown .links summary {
-  width: 1rem;
-  height: 100%;
+width: 1rem;
+height: 100%;
 }
 
 section nav .dropdown .links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  font-size: 20px;
-  color: #000;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: 200ms ease-out;
+text-decoration: none;
+color: #000;
+font-weight: 500;
+font-size: 20px;
 }
 
 section nav .dropdown .links a:hover::after {
-  width: 100%;
-  cursor: pointer;
-  transition: 200ms ease-out;
+width: 100%;
 }
 
 section nav .dropdown .links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  font-size: 17px;
+text-decoration: none;
+color: #000;
+font-weight: 500;
+font-size: 17px;
 }
 
 section nav .dropdown .links a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #000;
-  display: block;
+content: "";
+width: 0;
+height: 2px;
+background: #000;
+display: block;
 }
 
+
 section nav .icon i {
-  font-size: 18px;
-  color: #000;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: 200ms ease-out;
+font-size: 18px;
+color: #000;
+margin: 0 5px;
+cursor: pointer;
+transition: 200ms ease-out;
 }
 
 section nav .icon i:hover {
-  font-size: 18px;
-  color: #008000;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: 0.3s;
+font-size: 18px;
+color: #008000;
+margin: 0 5px;
+cursor: pointer;
+transition: 0.3s;
 }
 
 section .main {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  top: 130px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: relative;
+top: 130px;
 }
 
 section .main .men_text h1 {
-  width: 40rem;
-  font-size: 100px;
-  position: relative;
-  top: -70px;
-  text-align: center;
+width: 40rem;
+font-size: 100px;
+position: relative;
+top: -70px;
+text-align: center;
 }
 
 section .main .men_text h1 span {
-  margin-left: 15px;
-  color: black;
-  font-family: "pricedown";
-  line-height: 35px;
-  font-size: 120px;
-  text-align: left;
+margin-left: 15px;
+color: black;
+font-family: "pricedown";
+line-height: 35px;
+font-size: 120px;
+text-align: left;
 }
 
 section .main .main_image img {
-  width: 500px;
-  left: 70px;
+width: 500px;
+left: 70px;
 }
 
 section p {
-  width: 650px;
-  text-align: justify;
-  line-height: 22px;
-  font-size: 18px;
-  color: #333;
-  margin-top: 100px;
+width: 650px;
+text-align: justify;
+line-height: 22px;
+font-size: 18px;
+color: #333;
+margin-top: 100px;
 }
 
 section .main_btn {
-  background: green;
-  width: 159px;
-  cursor: pointer;
-  padding: 12px 25px;
-  position: absolute;
-  bottom: 30px;
-  left: 130px;
-  font-size: 18px;
+background: green;
+width: 159px;
+cursor: pointer;
+padding: 12px 25px;
+position: absolute;
+bottom: 30px;
+left: 130px;
+font-size: 18px;
 }
 
 section .main_btn a {
-  color: #fff;
-  margin-right: 5px;
-  text-decoration: none;
+color: #fff;
+margin-right: 5px;
+text-decoration: none;
 }
 
 section .main_btn i {
-  color: #fff;
-  transition: 0.3s;
+color: #fff;
+transition: 0.3s;
 }
 
 section .main_btn:hover i {
-  transform: translateX(7px);
+transform: translateX(7px);
 }
-  
-  /* Menu */
-  .menu {
-    width: 100%;
-    padding: 70px 0;
-    padding-bottom: 50px;
-  }
-  
-  .menu h1 {
-    font-size: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: -50px;
-  }
-  
-  .menu h1 span {
-    color: black;
-    margin-left: 15px;
-    font-family: "Oswald";
-    position: relative;
-    bottom: -30px;
-  }
-  
-  
 
-.menu .menu_box {
+/* Menu */
+.menu {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  grid-gap: 5px;
-  border-radius: 80px;
-  position: relative;
-  align-items: center;
-  justify-items: center;
-  bottom: -50px;
-}
- 
-
-
-.menu .menu_box .menu_card {
-  width: 320px;
-  height: 500px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  border-radius: 40px;
-  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); 
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
-              inset 0 10px 20px rgba(255, 255, 255, 0.1); 
-}
-.menu .menu_box .menu_card .menu_image {
-  width: 300px;
-  height: 245px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 40px;
-  background: #cdc1c1;
-  box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
-              inset 50px 50px 100px #cfc3c3;
+  padding: 70px 0;
+  padding-bottom: 50px;
 }
 
-.menu .menu_box .menu_card .menu_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: 0.3s;
-  
-}
-
-.menu .menu_box .menu_card .menu_image:hover img {
-  transform: scale(1.1);
-}
-
-.menu .menu_box .menu_card .small_card {
-  width: 45px;
-  height: 45px;
-  float: right;
-  position: relative;
-  top: -240px;
-  right: -8px;
-  opacity: 0;
-  border-radius: 7px;
-  transition: 0.3s;
-}
-
-.menu .menu_box .menu_card:hover .small_card {
-  position: relative;
-  bottom: 100px;
-  right: 20px;
-  opacity: 1;
-}
-
-.menu .menu_box .menu_card .small_card i {
-  font-size: 25px;
+.menu h1 {
+  font-size: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 50px;
-  color: #ffffff;
-  cursor: pointer;
-  text-shadow: 0 0 6px #ffffff;
-  transition: 0.2s;
+  bottom: -50px;
+}
+
+.menu h1 span {
+  color: black;
+  margin-left: 15px;
+  font-family: "Oswald";
+  position: relative;
+  bottom: -30px;
+}
+
+
+
+.menu .menu_box {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+grid-gap: 5px;
+border-radius: 80px;
+position: relative;
+align-items: center;
+justify-items: center;
+bottom: -50px;
+}
+
+
+
+.menu .menu_box .menu_card {
+width: 320px;
+height: 500px;
+padding-top: 10px;
+margin-bottom: 20px;
+border-radius: 40px;
+background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); 
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+            inset 0 10px 20px rgba(255, 255, 255, 0.1); 
+}
+.menu .menu_box .menu_card .menu_image {
+width: 300px;
+height: 245px;
+margin: 0 auto;
+overflow: hidden;
+border-radius: 40px;
+background: #cdc1c1;
+box-shadow: inset -50px -50px 100px hwb(0 44% 55%),
+            inset 50px 50px 100px #cfc3c3;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+transition: 0.3s;
+
+}
+
+.menu .menu_box .menu_card .menu_image:hover img {
+transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card {
+width: 45px;
+height: 45px;
+float: right;
+position: relative;
+top: -240px;
+right: -8px;
+opacity: 0;
+border-radius: 7px;
+transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card {
+position: relative;
+bottom: 100px;
+right: 20px;
+opacity: 1;
+}
+
+.menu .menu_box .menu_card .small_card i {
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+line-height: 50px;
+color: #ffffff;
+cursor: pointer;
+text-shadow: 0 0 6px #ffffff;
+transition: 0.2s;
 }
 
 .menu .menu_box .menu_card .small_card i:hover {
-  color: red;
+color: red;
 }
-  .menu .menu_box .menu_card .menu_info h4 {
-    width: 60%;
-    text-align: center;
-    margin: 10px auto 10px auto;
-    font-size: 20px;
-    color: #fac031;
-  }
-  
-  .menu .menu_box .menu_card .menu_info p {
-    text-align: center;
-    margin-top: 8px;
-    line-height: 21px;
-  }
-  
-  .menu .menu_box .menu_card .menu_info h3 {
-    text-align: center;
-    margin-top: 10px;
-    bottom: 10px;
-  }
-  
-  .menu .menu_box .menu_card .menu_info .menu_icon {
-    color: #fac031;
-    text-align: center;
-    margin: 10px 0 10px 0;
-  }
-  
-  .menu .menu_box .menu_card .menu_info .menu_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    background: green;
-    padding: 8px 10px;
-    margin: 0 80px;
-    transition: 0.3s;
-  }
+.menu .menu_box .menu_card .menu_info h4 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 20px;
+  color: #fac031;
+}
 
-  
+.menu .menu_box .menu_card .menu_info p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+  text-align: center;
+  margin-top: 10px;
+  bottom: 10px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+  color: #fac031;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: green;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+}
+
+
 .header-links {
-  font-family: "Oswald";
-  cursor: pointer;
+font-family: "Oswald";
+cursor: pointer;
 }
 
 /*interaction*/
 
 .not-active {
-  color: #acacac;
+color: #acacac;
 }
-  
-  
+
+
 
 footer {
   width: 100%;
@@ -373,12 +368,13 @@ footer {
   display: inline;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  
 }
 
 footer .footer_main {
   flex: 1;
-  display: inline-flex;
+  display:flex;
+  position: relative;
   justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
@@ -409,12 +405,19 @@ footer .footer_tag h2 {
   cursor: pointer;
   transition: 0.3s;
 }
-
+.footer_tag a{
+  text-decoration: none;
+}
 
 footer .footer_main .footer_tag h2 a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+.footer_tag h2{
+  position:relative;
+  top:15px;
+  
 }
 
 footer .footer_main .footer_tag p {
@@ -426,23 +429,32 @@ footer .footer_main .footer_tag i {
   margin: 0 5px;
   cursor: pointer;
   transition: 0.3s;
+  color:black;
 }
 
 footer .footer_main .footer_tag i:hover {
-  color: #fac031;
+  color: green;
 }
+.footer_icon{
+  font-size:20px;
+  align-items:center;
+  position: relative;
+  left:0px;
+  
+}
+
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: 13px;
+width: 13px;
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 15px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: green;
-  border-radius: 15px;
+background: green;
+border-radius: 15px;
 }

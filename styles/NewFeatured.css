@@ -411,10 +411,18 @@ footer .footer_main .footer_tag i {
   margin: 0 5px;
   cursor: pointer;
   transition: 0.3s;
+  color:black;
 }
 
 footer .footer_main .footer_tag i:hover {
-  color: #fac031;
+  color: green;
+}
+.footer_icon{
+  font-size:20px;
+  align-items:center;
+  position: relative;
+  left:0px;
+  
 }
 
 /* Scrollbar styles */

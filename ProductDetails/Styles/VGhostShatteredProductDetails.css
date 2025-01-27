@@ -120,16 +120,16 @@ section nav .icon i {
   color: #000;
   margin: 0 5px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-section nav .icon i:hover {
+  transition: 200ms ease-out;
+  }
+  
+  section nav .icon i:hover {
   font-size: 18px;
-  color: #000;
+  color: #008000;
   margin: 0 5px;
   cursor: pointer;
   transition: 0.3s;
-}
+  }
 
 section .main {
   padding: 25px;
