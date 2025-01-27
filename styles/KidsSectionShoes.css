@@ -125,11 +125,15 @@ section nav .icon i {
   color: #000;
   margin: 0 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 200ms ease-out;
 }
 
 section nav .icon i:hover {
-  color: black;
+  font-size: 18px;
+  color: #008000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 section .main {
@@ -196,8 +200,7 @@ section .main_btn i {
 section .main_btn:hover i {
   transform: translateX(7px);
 }
-  
-  /* Menu */
+
   .menu {
     width: 100%;
     padding: 70px 0;
@@ -336,7 +339,7 @@ section .main_btn:hover i {
     justify-content: center;
     text-decoration: none;
     color: white;
-    background: #000;
+    background: green;
     padding: 8px 10px;
     margin: 0 80px;
     transition: 0.3s;
@@ -367,7 +370,8 @@ footer {
 
 footer .footer_main {
   flex: 1;
-  display: inline-flex;
+  display:flex;
+  position: relative;
   justify-content: space-around; /* Distribute space around items */
   align-items: center;
   width: 100%;
@@ -398,12 +402,18 @@ footer .footer_tag h2 {
   cursor: pointer;
   transition: 0.3s;
 }
-
+.footer_tag a{
+  text-decoration: none;
+}
 
 footer .footer_main .footer_tag h2 a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+.footer_tag h2{
+  position:relative;
+  top:15px;
 }
 
 footer .footer_main .footer_tag p {
@@ -415,10 +425,31 @@ footer .footer_main .footer_tag i {
   margin: 0 5px;
   cursor: pointer;
   transition: 0.3s;
+  color:black;
 }
 
 footer .footer_main .footer_tag i:hover {
-  color: #fac031;
+  color: green;
+}
+.footer_icon{
+  font-size:15px;
+  text-align:center;
+  
+}
+.footer_icon h2{
+  font-size:23px;
+  text-align:center;
+
+  
+}
+.footer_tag h2{
+  position:relative;
+  top:15px;
+}
+
+.footer_icon a{
+  margin:auto 5px  ;
+ 
 }
 
 /* Scrollbar styles */

@@ -99,10 +99,16 @@ section nav .dropdown .links a {
   color: #000;
   font-weight: 500;
   font-size: 20px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 200ms ease-out;
 }
 
 section nav .dropdown .links a:hover::after {
   width: 100%;
+  cursor: pointer;
+  transition: 200ms ease-out;
 }
 
 section nav .dropdown .links a {
@@ -125,11 +131,15 @@ section nav .icon i {
   color: #000;
   margin: 0 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 200ms ease-out;
 }
 
 section nav .icon i:hover {
-  color: black;
+  font-size: 18px;
+  color: #008000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 section .main {
@@ -336,7 +346,7 @@ section .main_btn:hover i {
     justify-content: center;
     text-decoration: none;
     color: white;
-    background: #000;
+    background: green;
     padding: 8px 10px;
     margin: 0 80px;
     transition: 0.3s;

@@ -114,18 +114,22 @@ section nav .dropdown .links a::after {
   display: block;
 }
 
+
 section nav .icon i {
   font-size: 18px;
   color: #000;
   margin: 0 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 200ms ease-out;
 }
 
 section nav .icon i:hover {
-  color: black;
+  font-size: 18px;
+  color: #008000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
 section .main {
   display: flex;
   align-items: center;
