@@ -447,7 +447,16 @@ footer .footer_main .footer_tag i:hover {
   text-align: center;
   
 }
-
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
+  .add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
 footer .footer_bottom a {
   color: #fff;
   text-decoration: none;

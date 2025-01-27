@@ -816,3 +816,13 @@ color:white;
   text-decoration: none;
   color:white;
 }
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
+  .add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }

@@ -184,6 +184,7 @@ section .main_btn {
   bottom: 30px;
   left: 130px;
   font-size: 18px;
+ 
 }
 
 section .main_btn a {
@@ -344,6 +345,7 @@ section .main_btn:hover i {
     margin: 0 80px;
     transition: 0.3s;
     font-family: "Oswald";
+    border-radius: 25px;
   }
 
   

@@ -260,10 +260,12 @@ top: -20px;
 .checkout a button{
 font-family: "Oswald";
 color: white;
+border-radius: 25px;
 }
 .add-to-cart a button{
 font-family: "Oswald";
 color: white;
+border-radius: 25px;
 }
 .add-to-cart  {
 flex: 1; /* Ensure buttons take equal space */

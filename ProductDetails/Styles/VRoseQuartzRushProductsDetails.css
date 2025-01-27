@@ -337,7 +337,16 @@ background-color: #33ff5f;
   bottom:30px;
   font-family: "Oswald";
 }
-
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
+  .add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
 .additional-info div {
   display: flex;
   gap: 10px;

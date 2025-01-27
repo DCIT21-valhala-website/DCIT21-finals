@@ -346,6 +346,7 @@ section .main_btn:hover i {
     margin: 0 80px;
     transition: 0.3s;
     font-family: "Oswald";
+    border-radius: 25px;
   }
 
   

@@ -173,7 +173,16 @@ section p {
   line-height: 22px;
 }
 
-
+.checkout a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
+  .add-to-cart a button{
+  font-family: "Oswald";
+  color: white;
+  border-radius: 25px;
+  }
 .header-links {
   font-family: "Oswald";
   cursor: pointer;

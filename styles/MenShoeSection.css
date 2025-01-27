@@ -185,6 +185,7 @@ position: absolute;
 bottom: 30px;
 left: 130px;
 font-size: 18px;
+
 }
 
 section .main_btn a {
@@ -346,6 +347,7 @@ color: red;
   margin: 0 80px;
   transition: 0.3s;
   font-family: "Oswald";
+  border-radius: 25px;
 }
 
 
